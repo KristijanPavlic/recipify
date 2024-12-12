@@ -1,18 +1,18 @@
-import CustomLink from "../components/CustomLink";
+import CtaBtn from "../components/CtaBtn";
+import { Heading1 } from "../components/Headings";
 import SectionContainer from "../components/SectionContainer";
 
 export default function Hero() {
   return (
     <SectionContainer>
-      <h1 className="text-center text-3xl font-bold leading-[1.6] text-[var(--primary)] md:text-5xl md:leading-[1.6] lg:text-6xl lg:leading-[1.6] xl:text-8xl xl:leading-[1.4]">
+      <Heading1 className="text-center">
         Turn Your Pantry Into Delicious Meals!
-      </h1>
-      <CustomLink
-        href="/"
-        className="rounded-xl bg-[var(--accent)] px-4 py-2 hover:bg-[var(--primary)] hover:text-[var(--text-nav)]"
-      >
-        Get Started
-      </CustomLink>
+      </Heading1>
+      <div>
+        <CtaBtn href="/find-recipe" icon="chevron_right">
+          Get Started
+        </CtaBtn>
+      </div>
     </SectionContainer>
   );
 }
