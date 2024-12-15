@@ -1,6 +1,7 @@
 import SectionContainer from "../components/SectionContainer";
 import { Heading2 } from "../components/Headings";
 import CtaBtn from "../components/CtaBtn";
+import CustomLink from "../components/CustomLink";
 
 const steps = [
   {
@@ -54,12 +55,12 @@ export default function HowItWorks() {
             Try It Out
           </CtaBtn>
         </div>
-        {/* <div className="mt-20 grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8 xl:grid-cols-4 xl:gap-12">
+        <div className="mt-20 grid grid-cols-1 gap-6 md:mt-32 lg:grid-cols-3 lg:gap-8 xl:grid-cols-3 xl:gap-12">
           <div className="rounded-xl border border-[var(--primary)] bg-[var(--text-nav)] px-6 py-4">
-            <p className="mt-8 text-lg">
+            <p className="text-lg">
               Have a question or feedback? Feel free to{" "}
               <CustomLink
-                href="mailto:test@test.com"
+                href="/contact"
                 className="text-[var(--primary)] hover:underline"
               >
                 contact us
@@ -68,7 +69,7 @@ export default function HowItWorks() {
             </p>
           </div>
           <div className="rounded-xl border border-[var(--primary)] bg-[var(--text-nav)] px-6 py-4">
-            <p className="mt-8 text-lg">
+            <p className="text-lg">
               Want to learn more about Recipify? Check out our{" "}
               <CustomLink
                 href="/about"
@@ -80,7 +81,7 @@ export default function HowItWorks() {
             </p>
           </div>
           <div className="rounded-xl border border-[var(--primary)] bg-[var(--text-nav)] px-6 py-4">
-            <p className="mt-8 text-lg">
+            <p className="text-lg">
               Ready to start cooking? Head over to our{" "}
               <CustomLink
                 href="/find-recipe"
@@ -91,19 +92,7 @@ export default function HowItWorks() {
               .
             </p>
           </div>
-          <div className="rounded-xl border border-[var(--primary)] bg-[var(--text-nav)] px-6 py-4">
-            <p className="mt-8 text-lg">
-              Want to see what others are cooking? Check out our{" "}
-              <CustomLink
-                href="/recipes"
-                className="text-[var(--primary)] hover:underline"
-              >
-                recipes page
-              </CustomLink>
-              .
-            </p>
-          </div>
-        </div> */}
+        </div>
       </div>
     </SectionContainer>
   );

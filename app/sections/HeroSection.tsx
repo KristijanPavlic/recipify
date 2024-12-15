@@ -13,6 +13,9 @@ export default function Hero() {
           Get Started
         </CtaBtn>
       </div>
+      <div className="mt-2">
+        <span>Scroll to discover</span>
+      </div>
     </SectionContainer>
   );
 }
