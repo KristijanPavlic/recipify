@@ -10,21 +10,6 @@ const linksArray = [
   "Terms of Service",
 ];
 
-const socialMediaArray = [
-  {
-    name: "Facebook",
-    url: "/",
-  },
-  {
-    name: "X",
-    url: "/",
-  },
-  {
-    name: "Instagram",
-    url: "/",
-  },
-];
-
 const Footer = () => {
   return (
     <footer
@@ -64,22 +49,27 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Social Media Section */}
+          {/* Newsletter Section */}
           <div className="flex flex-col">
-            <h2 className="text-lg font-semibold">Follow Us</h2>
-            <ul className="mt-3 flex gap-5">
-              {socialMediaArray.map((socialMedia) => (
-                <li key={socialMedia.name}>
-                  <CustomLink
-                    href={socialMedia.url}
-                    aria-label={`Follow us on ${socialMedia.name}`}
-                    className="text-base font-normal hover:text-[var(--accent)] md:text-lg"
-                  >
-                    {socialMedia.name}
-                  </CustomLink>
-                </li>
-              ))}
-            </ul>
+            <h2 className="text-lg font-semibold">
+              Subscribe to our newsletter
+            </h2>
+            <div>
+              <form className="mt-3 flex flex-col gap-2">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  required
+                  className="w-full rounded-lg bg-[var(--text-nav)] px-4 py-2 text-[var(--primary)] focus:outline-none"
+                />
+                <button
+                  type="button"
+                  className="w-fit rounded-lg bg-[var(--accent)] px-3 py-1 font-semibold text-[var(--text-primary)] transition-all duration-300 ease-in-out hover:bg-[var(--background)] hover:text-[var(--primary)] focus:outline-none"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
